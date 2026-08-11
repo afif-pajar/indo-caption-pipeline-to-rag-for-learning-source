@@ -1,0 +1,29 @@
+name: Bug report
+description: Report a reproducible non-security defect
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not include private media, transcripts, credentials, or security vulnerabilities.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Use synthetic or openly licensed sample data only.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+    validations:
+      required: true
+
